@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Membership</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .radio-group {
+            margin-bottom: 20px;
+        }
+
+        .radio-group label {
+            font-weight: normal;
+            display: block;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cancel {
+            background-color: #6c757d;
+        }
+
+        .confirm {
+            background-color: #007bff;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            margin-top: 15px;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .nav-links a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation Links -->
+       
+
+        <!-- Form Title -->
+        <h2>Update Membership</h2>
+
+        <!-- Update Membership Form -->
+        <form>
+            <!-- Membership Number -->
+            <label for="membership-number">Membership Number</label>
+            <input type="text" id="membership-number" placeholder="Enter Membership Number">
+
+            <!-- Start Date -->
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date">
+
+            <!-- End Date -->
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date">
+
+            <!-- Membership Extension Options -->
+            <div class="radio-group">
+                <label>Membership Extension:</label>
+                <label><input type="radio" name="membership-ext" value="six_months"> Six Months</label>
+                <label><input type="radio" name="membership-ext" value="one_year"> One Year</label>
+                <label><input type="radio" name="membership-ext" value="two_years"> Two Years</label>
+            </div>
+
+            <!-- Membership Remove -->
+            <div class="radio-group">
+                <label><input type="radio" name="membership-remove" value="remove"> Remove Membership</label>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button type="reset" class="button cancel">Cancel</button>
+                <button type="submit" class="button confirm">Confirm</button>
+            </div>
+        </form>
+
+        <!-- Log Out Link -->
+        <a href="#">Log Out</a>
+    </div>
+
+</body>

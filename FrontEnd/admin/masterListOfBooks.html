@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master List of Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: blue;
+            font-size: 12px;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 200px;
+            float: left;
+            border-right: 1px solid #ccc;
+            padding: 10px;
+            height: 100vh;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin: 5px 0;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        /* Main Content */
+        .main {
+            margin-left: 220px;
+            padding: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+
+        /* Log Out Styling */
+        .logout {
+            text-align: right;
+            margin: 10px 20px;
+        }
+
+        .logout a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .logout a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <a href="#" class="chart">Chart</a>
+        <span>Home</span>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <li><a href="masterListOfBooks.html">Master List of Books</a></li>
+        <li><a href="masterListOfMovies.html">Master List of Movies</a></li>
+        <li><a href="masterListOfmembership.html">Master List of Memberships</a></li>
+        <li><a href="activeIssue.html">Active Issues</a></li>
+        <li><a href="overDueReturns.html">Overdue Returns</a></li>
+        <li><a href="issueRequesr.html">Pending Issue Requests</a></li>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <h2>Master List of Books</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial No</th>
+                    <th>Name of Book</th>
+                    <th>Author Name</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Cost</th>
+                    <th>Procurement Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Placeholder Rows -->
+                <tr>
+                    <td>1</td>
+                    <td>Sample Book 1</td>
+                    <td>Author A</td>
+                    <td>Fiction</td>
+                    <td>Available</td>
+                    <td>$10</td>
+                    <td>2024-06-15</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sample Book 2</td>
+                    <td>Author B</td>
+                    <td>Non-Fiction</td>
+                    <td>Issued</td>
+                    <td>$12</td>
+                    <td>2024-06-16</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Sample Book 3</td>
+                    <td>Author C</td>
+                    <td>Science</td>
+                    <td>Available</td>
+                    <td>$15</td>
+                    <td>2024-06-17</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Back Button -->
+        <div class="back-button">
+            <button onclick="history.back()">Back</button>
+        </div>
+    </div>
+
+    <!-- Log Out Section -->
+    <div class="logout">
+        <a href="#">Log Out</a>
+    </div>
+</body>
+</html>

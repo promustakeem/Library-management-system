@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Active Memberships</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: blue;
+            font-size: 12px;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 200px;
+            float: left;
+            border-right: 1px solid #ccc;
+            padding: 10px;
+            height: 100vh;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin: 5px 0;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        /* Main Content */
+        .main {
+            margin-left: 220px;
+            padding: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+
+        /* Log Out */
+        .logout {
+            text-align: right;
+            margin: 10px 20px;
+        }
+
+        .logout a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .logout a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <a href="#" class="chart">Chart</a>
+        <span>Home</span>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <li><a href="masterListOfBooks.html">Master List of Books</a></li>
+        <li><a href="masterListOfMovies.html">Master List of Movies</a></li>
+        <li><a href="masterListOfmembership.html">Master List of Memberships</a></li>
+        <li><a href="activeIssue.html">Active Issues</a></li>
+        <li><a href="overDueReturns.html">Overdue Returns</a></li>
+        <li><a href="issueRequesr.html">Pending Issue Requests</a></li>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <h2>List of Active Memberships</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Membership Id</th>
+                    <th>Name of Member</th>
+                    <th>Contact Number</th>
+                    <th>Contact Address</th>
+                    <th>Aadhar Card No</th>
+                    <th>Start Date of Membership</th>
+                    <th>End Date of Membership</th>
+                    <th>Status (Active/Inactive)</th>
+                    <th>Amount Pending (Fine)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Placeholder rows -->
+                <tr>
+                    <td>101</td>
+                    <td>John Doe</td>
+                    <td>123-456-7890</td>
+                    <td>123 Main St</td>
+                    <td>1234-5678-9012</td>
+                    <td>2024-01-01</td>
+                    <td>2025-01-01</td>
+                    <td>Active</td>
+                    <td>$0</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Jane Smith</td>
+                    <td>987-654-3210</td>
+                    <td>456 Elm St</td>
+                    <td>4321-8765-2109</td>
+                    <td>2024-02-01</td>
+                    <td>2025-02-01</td>
+                    <td>Active</td>
+                    <td>$10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button onclick="history.back()">Back</button>
+            <button onclick="confirmAction()">Confirm</button>
+        </div>
+    </div>
+
+    <!-- Log Out -->
+    <div class="logout">
+        <a href="#">Log Out</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function confirmAction() {
+            alert("Confirm button clicked!");
+        }
+    </script>
+</body>
+</html>

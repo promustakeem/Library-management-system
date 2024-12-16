@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        .login-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .input-group {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        label {
+            font-size: 14px;
+            margin-right: 10px;
+            text-align: left;
+        }
+
+        input {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #333;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4397D0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3578a8;
+        }
+
+        .cancel-btn {
+            background-color: #a3a3a3;
+        }
+
+        .cancel-btn:hover {
+            background-color: #8a8a8a;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Library Management System</h2>
+        <div class="input-group">
+            <label for="userid">User ID</label>
+            <input type="text" id="userid" placeholder="">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="">
+        </div>
+        <div class="buttons">
+            <button class="cancel-btn">Cancel</button>
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+</html>

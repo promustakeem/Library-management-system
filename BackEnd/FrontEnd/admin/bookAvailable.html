@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Transactions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 70%;
+            margin: 20px auto;
+            border: 1px solid #000;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+
+        .navigation-links {
+            margin-bottom: 10px;
+        }
+
+        .navigation-links a {
+            display: block;
+        }
+
+        .logout {
+            text-align: right;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Links -->
+    <div class="navigation-links">
+        <!-- <a href="#">Chart</a> -->
+        <a href="bookAvailable.html">Is book available?</a>
+        <a href="issueBook.html">Issue book?</a>
+        <a href="returnBook.html">Return book?</a>
+        <a href="payfine.html">Pay Fine?</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header">Transactions</div>
+
+        <!-- Form -->
+        <form action="confirm.html" method="post">
+            <table>
+                <tr>
+                    <th colspan="2">Book Availability</th>
+                    
+                </tr>
+                <tr>
+                    <th>Enter Book Name</th>
+                    <td>
+                        <select name="book_name" required>
+                            <option value="">Select a Book</option>
+                            <option value="book1">Book 1</option>
+                            <option value="book2">Book 2</option>
+                            <option value="book3">Book 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Enter Author</th>
+                    <td>
+                        <select name="author_name" required>
+                            <option value="">Select an Author</option>
+                            <option value="author1">Author 1</option>
+                            <option value="author2">Author 2</option>
+                            <option value="author3">Author 3</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Buttons -->
+            <div class="button-container">
+                <button type="button" onclick="history.back()">Back</button>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Logout Link -->
+    <div class="logout">
+        <a href="logout.html">Log Out</a>
+    </div>
+</body>
+</html>

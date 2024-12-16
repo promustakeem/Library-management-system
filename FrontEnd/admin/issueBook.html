@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Issue Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .main-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .header-links {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .header-links a {
+            display: block;
+            margin-bottom: 10px;
+            color: blue;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+        .container {
+            border: 2px solid black;
+            padding: 10px;
+            flex: 3;
+        }
+        .title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        form table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px;
+            vertical-align: middle;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .btn {
+            background-color: #3399FF;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #287BDB;
+        }
+        .home-logout {
+            text-align: right;
+            margin-top: 10px;
+        }
+        .home-logout a {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-links">
+            <a href="bookAvailable.html">Is book available?</a>
+            <a href="issueBook.html">Issue book?</a>
+            <a href="returnBook.html">Return book?</a>
+            <a href="payfine.html">Pay Fine?</a>
+        </div>
+
+        <div class="container">
+            <div class="title">Book Issue</div>
+            <form action="#" method="post">
+                <table border="1">
+                    <tr>
+                        <td>Enter Book Name</td>
+                        <td><select name="book_name">
+                                <option value="">Select Book</option>
+                                <option value="book1">Book 1</option>
+                                <option value="book2">Book 2</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Enter Author</td>
+                        <td><input type="text" name="author" placeholder="Enter Author Name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Issue Date</td>
+                        <td><input type="date" name="issue_date" required></td>
+                    </tr>
+                    <tr>
+                        <td>Return Date</td>
+                        <td><input type="date" name="return_date" required></td>
+                    </tr>
+                    <tr>
+                        <td>Remarks</td>
+                        <td><textarea name="remarks" placeholder="Optional"></textarea></td>
+                    </tr>
+                </table>
+                <div class="buttons">
+                    <button type="reset" class="btn">Cancel</button>
+                    <button type="submit" class="btn">Confirm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="home-logout">
+        <a href="#">Home</a> | <a href="#">Log Out</a>
+    </div>
+</body>
+</html>
